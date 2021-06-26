@@ -1,0 +1,63 @@
+@use "sass:list";
+@use "sass:map";
+@import '~@wordpress/base-styles/colors';
+@import '~@wordpress/base-styles/variables';
+@import '~@wordpress/base-styles/mixins';
+@import '~@wordpress/base-styles/breakpoints';
+@import '~@wordpress/base-styles/animations';
+@import '~@wordpress/base-styles/z-index';
+@import '~@wordpress/base-styles/default-custom-properties';
+
+@import './vars.scss';
+
+//TODO: move to individual files
+@import "~@wordpress/block-library/src/audio/style.scss";
+@import "~@wordpress/block-library/src/button/style.scss";
+@import "~@wordpress/block-library/src/buttons/style.scss";
+@import "~@wordpress/block-library/src/calendar/style.scss";
+@import "~@wordpress/block-library/src/categories/style.scss";
+@import "~@wordpress/block-library/src/code/style.scss";
+@import "~@wordpress/block-library/src/columns/style.scss";
+
+@import "~@wordpress/block-library/src/group/style.scss";
+@import "~@wordpress/block-library/src/heading/style.scss";
+@import "~@wordpress/block-library/src/image/style.scss";
+@import "~@wordpress/block-library/src/latest-comments/style.scss";
+@import "~@wordpress/block-library/src/latest-posts/style.scss";
+@import "~@wordpress/block-library/src/list/style.scss";
+@import "~@wordpress/block-library/src/media-text/style.scss";
+@import "~@wordpress/block-library/src/navigation/style.scss";
+@import "~@wordpress/block-library/src/navigation-link/style.scss";
+@import "~@wordpress/block-library/src/home-link/style.scss";
+@import "~@wordpress/block-library/src/page-list/style.scss";
+@import "~@wordpress/block-library/src/paragraph/style.scss";
+@import "~@wordpress/block-library/src/post-author/style.scss";
+@import "~@wordpress/block-library/src/post-comments/style.scss";
+@import "~@wordpress/block-library/src/post-comments-form/style.scss";
+@import "~@wordpress/block-library/src/post-excerpt/style.scss";
+@import "~@wordpress/block-library/src/post-title/style.scss";
+@import "~@wordpress/block-library/src/preformatted/style.scss";
+@import "~@wordpress/block-library/src/pullquote/style.scss";
+@import "~@wordpress/block-library/src/query-loop/style.scss";
+@import "~@wordpress/block-library/src/query-pagination/style.scss";
+@import "~@wordpress/block-library/src/quote/style.scss";
+@import "~@wordpress/block-library/src/rss/style.scss";
+@import "~@wordpress/block-library/src/search/style.scss";
+@import "~@wordpress/block-library/src/separator/style.scss";
+@import "~@wordpress/block-library/src/site-logo/style.scss";
+@import "~@wordpress/block-library/src/social-links/style.scss";
+@import "~@wordpress/block-library/src/spacer/style.scss";
+@import "~@wordpress/block-library/src/tag-cloud/style.scss";
+@import "~@wordpress/block-library/src/table/style.scss";
+@import "~@wordpress/block-library/src/text-columns/style.scss";
+@import "~@wordpress/block-library/src/verse/style.scss";
+@import "~@wordpress/block-library/src/post-featured-image/style.scss";
+
+//Custom WP Block styles
+@import "./wordpress/blocks/embed.scss";
+@import "./wordpress/blocks/gallery.scss";
+@import "./wordpress/blocks/cover.scss";
+@import "./wordpress/blocks/video.scss";
+@import "./wordpress/blocks/global.scss";
+
+@import "./wordpress/index.scss";

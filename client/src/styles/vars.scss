@@ -1,0 +1,16 @@
+//TODO: write theme
+$space: (0, 4, 8, 16, 32, 64, 128, 256, 512);
+$fontSizes: (12, 14, 16, 20, 24, 32, 48, 64, 96);
+$colors: ();
+$widths: (
+    'content': 1024px,
+    'breakout': 1200px
+);
+$link: (
+  color: "primary",
+  textDecoration: 'none',
+);
+$linkHover: (
+  color: 'secondary',
+  textDecoration: 'underline'
+);

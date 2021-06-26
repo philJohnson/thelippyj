@@ -1,0 +1,19 @@
+
+.has-text-align-center {
+    text-align: center;
+}
+.has-small-font-size {
+    font-size: #{list.nth($fontSizes, 2)}px;
+}
+.has-normal-font-size {
+    font-size: #{list.nth($fontSizes, 3)}px;
+}
+.has-medium-font-size {
+    font-size: #{list.nth($fontSizes, 5)}px;
+}
+.has-large-font-size {
+    font-size: #{list.nth($fontSizes, 7)}px;
+}
+.has-huge-font-size {
+    font-size: #{list.nth($fontSizes, 8)}px;
+}

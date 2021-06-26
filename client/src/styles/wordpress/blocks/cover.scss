@@ -1,0 +1,44 @@
+@import "~@wordpress/block-library/src/cover/style.scss";
+
+//TODO: look into why the element has injected inline styles
+//TODO: replace wordpress colours with theme colours
+.wp-block-cover-image,
+.wp-block-cover {
+    .wp-block-cover__image-background,
+	.wp-block-cover__video-background {
+		position: absolute !important;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		margin: 0;
+		padding: 0;
+		width: 100% !important;
+		height: 100% !important;
+		max-width: none !important;
+		max-height: none !important;
+		object-fit: cover;
+		outline: none;
+		border: none;
+		box-shadow: none;
+	}
+    &.has-background-dim:not([class*="-background-color"]) {
+		background-color: $black;
+	}
+
+	&.has-background-dim::before {
+		content: "";
+		background-color: $black;
+	}
+
+	&.has-background-dim:not(.has-background-gradient)::before,
+	.wp-block-cover__gradient-background {
+		position: absolute;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+		z-index: z-index(".wp-block-cover.has-background-dim::before");
+		opacity: 0.5;
+	} 
+}
