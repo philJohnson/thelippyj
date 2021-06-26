@@ -1,0 +1,18 @@
+# Created by trellis-cli v0.9.2
+# Documentation: https://roots.io/trellis/docs/wordpress-sites/
+
+wordpress_sites:
+  thelippyj.com:
+    site_hosts:
+    - canonical: thelippyj.test
+      redirects:
+      - www.thelippyj.test
+    local_path: ../site
+    admin_email: admin@thelippyj.test
+    multisite:
+      enabled: false
+    ssl:
+      enabled: false
+      provider: self-signed
+    cache:
+      enabled: false
