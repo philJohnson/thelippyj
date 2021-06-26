@@ -23,10 +23,6 @@ module.exports = {
           requestConcurrency: 5, // currently set to 15
           previewRequestConcurrency: 2, // currently set to 5
         },
-        searchAndReplace: [{
-          search: process.env.WORDPRESS_URL,
-          replace: process.env.GATSBY_URL,
-        }],
         type: {
           User: {
             exclude: true,
