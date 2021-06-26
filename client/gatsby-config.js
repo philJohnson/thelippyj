@@ -20,6 +20,12 @@ module.exports = {
           preview: true,
         },
         url: process.env.GATSBY_CMS_ENDPOINT,
+        schema: {
+          timeout: 60000,
+          perPage: 100, // currently set to 100
+          requestConcurrency: 5, // currently set to 15
+          previewRequestConcurrency: 2, // currently set to 5
+        },
         searchAndReplace: [{
           search: process.env.WORDPRESS_URL,
           replace: process.env.GATSBY_URL,
