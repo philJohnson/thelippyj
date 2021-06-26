@@ -14,9 +14,6 @@ module.exports = {
           hardCacheMediaFiles: true,
         },
         debug: {
-          graphql: {
-            writeQueriesToDisk: true,
-          },
           preview: true,
         },
         url: process.env.GATSBY_CMS_ENDPOINT,
