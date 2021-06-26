@@ -31,6 +31,9 @@ module.exports = {
           User: {
             exclude: true,
           },
+          UserRole: {
+            exclude: true,
+          },
           Tag: {
             exclude: true,
           },
