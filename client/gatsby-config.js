@@ -27,6 +27,17 @@ module.exports = {
           search: process.env.WORDPRESS_URL,
           replace: process.env.GATSBY_URL,
         }],
+        type: {
+          User: {
+            exclude: true,
+          },
+          Tag: {
+            exclude: true,
+          },
+          Comment: {
+            exclude: true,
+          }
+        }
       },
     },
     {
