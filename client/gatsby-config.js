@@ -1,3 +1,7 @@
+require('dotenv').config({
+  path: `.env.${process.env.NODE_ENV}`,
+});
+
 module.exports = {
   siteMetadata: {
     title: "The Lippy J",
@@ -15,7 +19,11 @@ module.exports = {
           },
           preview: true,
         },
-        url: "http://thelippyj.test/wp/graphql",
+        url: process.env.GATSBY_CMS_ENDPOINT,
+        searchAndReplace: [{
+          search: process.env.WORDPRESS_URL,
+          replace: process.env.GATSBY_URL,
+        }],
       },
     },
     {
