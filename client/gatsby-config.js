@@ -18,6 +18,10 @@ module.exports = {
           preview: true,
         },
         url: process.env.GATSBY_CMS_ENDPOINT,
+        searchAndReplace: [{
+          search: process.env.GATSBY_CMS_URL,
+          replace: process.env.GATSBY_URL,
+        }],
         schema: {
           timeout: 60000,
           perPage: 100, // currently set to 100
