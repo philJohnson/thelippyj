@@ -91,23 +91,27 @@ export const Layout = ({ children, title }) => {
           minHeight: "100vh",
         }}
       >
-        <Header  />
+        <Header />
         <main
           sx={{
             width: "100%",
             flex: "1 1 auto",
           }}
         >
-          <div sx={{
-            variant: 'layout'
-          }}
+          <div
+            sx={{
+              variant: "layout",
+            }}
           >
-            {title &&
-            <header sx={{
-              my: 4
-            }}>
-              <Themed.h1>{title}</Themed.h1>
-            </header>}
+            {title && (
+              <header
+                sx={{
+                  my: 4,
+                }}
+              >
+                <Themed.h1>{title}</Themed.h1>
+              </header>
+            )}
             {children}
           </div>
         </main>
