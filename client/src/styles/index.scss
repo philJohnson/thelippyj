@@ -20,14 +20,15 @@
 @import "~@wordpress/block-library/src/columns/style.scss";
 
 @import "~@wordpress/block-library/src/group/style.scss";
-@import "~@wordpress/block-library/src/heading/style.scss";
+
 @import "~@wordpress/block-library/src/image/style.scss";
 @import "~@wordpress/block-library/src/latest-comments/style.scss";
 @import "~@wordpress/block-library/src/latest-posts/style.scss";
 @import "~@wordpress/block-library/src/list/style.scss";
-@import "~@wordpress/block-library/src/media-text/style.scss";
+// @import "~@wordpress/block-library/src/media-text/style.scss";
 @import "~@wordpress/block-library/src/navigation/style.scss";
 @import "~@wordpress/block-library/src/navigation-link/style.scss";
+
 @import "~@wordpress/block-library/src/home-link/style.scss";
 @import "~@wordpress/block-library/src/page-list/style.scss";
 @import "~@wordpress/block-library/src/paragraph/style.scss";
@@ -38,10 +39,9 @@
 @import "~@wordpress/block-library/src/post-title/style.scss";
 @import "~@wordpress/block-library/src/preformatted/style.scss";
 @import "~@wordpress/block-library/src/pullquote/style.scss";
-// @import "~@wordpress/block-library/src/query-loop/style.scss";
 @import "~@wordpress/block-library/src/query-pagination/style.scss";
 @import "~@wordpress/block-library/src/quote/style.scss";
-@import "~@wordpress/block-library/src/rss/style.scss";
+
 @import "~@wordpress/block-library/src/search/style.scss";
 @import "~@wordpress/block-library/src/separator/style.scss";
 @import "~@wordpress/block-library/src/site-logo/style.scss";
@@ -58,6 +58,8 @@
 @import "./wordpress/blocks/gallery.scss";
 @import "./wordpress/blocks/cover.scss";
 @import "./wordpress/blocks/video.scss";
+@import "./wordpress/blocks/media-text.scss";
 @import "./wordpress/blocks/global.scss";
+
 
 @import "./wordpress/index.scss";

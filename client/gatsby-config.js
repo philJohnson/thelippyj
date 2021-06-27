@@ -5,6 +5,7 @@ require('dotenv').config({
 module.exports = {
   siteMetadata: {
     title: "The Lippy J",
+    siteUrl: process.env.GATSBY_URL,
   },
   plugins: [
     {
