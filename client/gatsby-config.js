@@ -72,6 +72,12 @@ module.exports = {
       __key: "images",
     },
     {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: 'G-KFBJ5X222J',
+      },
+    },
+    {
       resolve: "gatsby-plugin-react-svg",
       options: {
         rule: {
@@ -81,3 +87,4 @@ module.exports = {
     },
   ],
 };
+
